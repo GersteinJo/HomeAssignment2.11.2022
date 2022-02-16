@@ -88,7 +88,7 @@ int main()
     std::cout << myPhoneBook;
     std::multimap<std::string,std::string> searchResult(myPhoneBook.FindUser("Jeniffer Chang"));
 
-    for(auto [user, phone]: searchResult) std::cout<<user<<": "<<phone;
+    for(auto [user, phone]: searchResult) std::cout<<user<<": "<<phone<<"\n";
 
     std::ifstream phoneBookFile;
     phoneBookFile.open("PhoneBook.txt");
